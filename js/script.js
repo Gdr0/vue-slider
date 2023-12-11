@@ -46,5 +46,8 @@ createApp({
         this.activeCard = 0;
       }
     },
+    thumbNail(i) {
+      this.activeCard = i;
+    },
   },
 }).mount("#app");

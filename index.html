@@ -24,7 +24,13 @@
             <div class="prev" @click="prevImg"></div>
             <div class="next" @click="nextImg"></div>
             <div class="thumb active">
-              <img v-for="game in games" :src="game.image" alt="" />
+              <img
+                v-for="(game, i) in games"
+                :src="game.image"
+                :key="i"
+                @click="thumbNail(i)"
+                alt=""
+              />
             </div>
           </div>
         </div>
